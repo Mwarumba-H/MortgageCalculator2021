@@ -3,8 +3,9 @@ package com.mwarumbaproject;
 import java.util.Scanner;
 
 public class Console {
+    private static Scanner input = new Scanner(System.in);
+
     public static double readNumber(String prompt, double min, double max){
-        Scanner input = new Scanner(System.in);
         double value; //this is a generic name to replace the specified variables.
         while(true){
             System.out.print(prompt);
